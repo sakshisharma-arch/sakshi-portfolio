@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sakshi Sharma | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="site-title">Welcome to Sakshi's Portfolio</h1>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <h2 class="greeting">Hello, I'm <span class="name">Sakshi Sharma</span> <span class="wave">👋</span></h2>
+        <p class="lead">I'm a passionate <strong>React Native Developer</strong> and <strong>UI/UX Enthusiast</strong> from Bangalore.<br>
+          I love building clean, interactive, and user-friendly applications.</p>
+        <p class="quote">"Code. Create. Inspire."</p>
+        <div class="cta">
+          <a class="btn" href="resume.html">View Resume</a>
+          <a class="btn ghost" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Sakshi Sharma | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Simple animation: add 'visible' class after load for fade-in
+    window.addEventListener('load', () => {
+      document.querySelector('.hero-inner').classList.add('visible');
+      // subtle glowing pulse on name
+      const name = document.querySelector('.name');
+      name.classList.add('glow');
+    });
+  </script>
+</body>
+</html>
